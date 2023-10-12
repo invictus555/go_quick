@@ -8,7 +8,7 @@ import (
 type Student struct {
 	Name string `json:"name"`
 	Age  int    `json:"age"`
-	Sex  string `json:"-"`
+	Sex  string `json:"sex"`
 }
 
 type Teacher struct {
@@ -31,4 +31,22 @@ func TestifyIngoreLLabel() {
 	}
 
 	fmt.Println(string(bytes)) // {"name":"alan","age":18}
+}
+
+func TestifyArrayJSON() {
+	stus := []*Student{
+		&Student{
+			Name: "abc",
+			Age:  18,
+			Sex:  "male",
+		},
+		&Student{
+			Name: "bcd",
+			Age:  12,
+			Sex:  "female",
+		},
+	}
+
+	body, _ := json.Marshal(stus)
+	fmt.Println(string(body))
 }

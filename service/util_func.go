@@ -180,7 +180,7 @@ func getPolicies(namespace, resourceKey string, regionSettings []*Pair, reqs []*
 
 func getPermissionTasks(namespace, resourceKey, region string, requests []*PermissionRequest) []*Task {
 	var tasks []*Task
-	if requests == nil || len(requests) == 0 {
+	if len(requests) == 0 {
 		return tasks
 	}
 

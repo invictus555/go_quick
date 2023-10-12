@@ -1,0 +1,25 @@
+runtime error: invalid memory address or nil pointer dereference
+==> goroutine 19 [running]:
+gologic/core.(*Core).Check.func1()
+	/Users/ljh/bytedance/log/ggg/mini-gologic/core/core.go:354 +0x107
+panic({0x4320b20, 0x45e1130})
+	/usr/local/Cellar/go/1.17.2/libexec/src/runtime/panic.go:1038 +0x215
+gologic/utils.GetConfFiles.func1({0xc000901cc0, 0x42}, {0x0, 0x0}, {0xc0001b5db0, 0x0})
+	/Users/ljh/bytedance/log/ggg/mini-gologic/utils/utils.go:221 +0x97
+path/filepath.walk({0xc00019b8c0, 0x37}, {0x43e6170, 0xc000907ba0}, 0xc0001b5db0)
+	/usr/local/Cellar/go/1.17.2/libexec/src/path/filepath/path.go:438 +0x20d
+path/filepath.walk({0xc00019a0c0, 0x32}, {0x43e6170, 0xc000907a00}, 0xc0001b5db0)
+	/usr/local/Cellar/go/1.17.2/libexec/src/path/filepath/path.go:442 +0x28f
+path/filepath.Walk({0xc00019a0c0, 0x32}, 0xc0001b5db0)
+	/usr/local/Cellar/go/1.17.2/libexec/src/path/filepath/path.go:505 +0x6c
+gologic/utils.GetConfFiles({0xc00019a0c0, 0x32})
+	/Users/ljh/bytedance/log/ggg/mini-gologic/utils/utils.go:218 +0x113
+gologic/core.(*Core).Check(0x45ef6c0, {0x7ff7bfeff195, 0x4a}, 0x1)
+	/Users/ljh/bytedance/log/ggg/mini-gologic/core/core.go:397 +0x2e7
+main.work()
+	/Users/ljh/bytedance/log/ggg/mini-gologic/main.go:91 +0x93
+main.main.func1()
+	/Users/ljh/bytedance/log/ggg/mini-gologic/main.go:76 +0x25
+created by main.main
+	/Users/ljh/bytedance/log/ggg/mini-gologic/main.go:75 +0x245
+

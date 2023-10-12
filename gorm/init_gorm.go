@@ -19,3 +19,7 @@ func init() {
 	}
 	db = instance
 }
+
+func GetDB() *gorm.DB {
+	return db
+}
