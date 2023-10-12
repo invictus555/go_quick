@@ -12,7 +12,7 @@ const (
 )
 
 func main() {
-	gorm.TestifyHasManyUpdate()
+	gorm.TestifyHasManyCreate()
 }
 
 /*-----------------------------------------------------------------------------------------*/

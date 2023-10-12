@@ -8,8 +8,8 @@ import (
 var db *gorm.DB
 
 const (
-	// 数据库名:ker_service, 用户名:root, 密码:123456
-	dsn = "root:123456@tcp(127.0.0.1:3306)/ker_service?charset=utf8mb4&parseTime=True&loc=Local"
+	// 数据库名:gorm_demo, 用户名:root, 密码:123456
+	dsn = "root:123456@tcp(10.37.74.224:3306)/gorm_demo?charset=utf8mb4&parseTime=True&loc=Local"
 )
 
 func init() {
